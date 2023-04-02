@@ -10,7 +10,7 @@ const Test2Component = () => {
   const buttonStyle = {
     backgroundColor: "#4CAF50",
     border: "none",
-    color: "red",
+    color: "yellow",
     padding: "10px 20px",
     textAlign: "center",
     textDecoration: "none",

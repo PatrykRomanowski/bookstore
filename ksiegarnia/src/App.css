@@ -1,1 +1,12 @@
+@font-face {
+  font-family: "Changa One";
+  src: url("fonts/ChangaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+.headerStyles {
+  width: 100vw;
+  height: 10vh;
+  background-color: #aaa;
+}

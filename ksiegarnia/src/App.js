@@ -3,7 +3,7 @@ import "./App.css";
 import TestComponent from "./Components/test";
 import Test2Component from "./Components/test2";
 import TestComponent3 from "./Components/test3";
-<<<<<<< HEAD
+import Header from "./Components/header";
 import TestCompJurek from "./Components/jurektest";
 
 function App() {

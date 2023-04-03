@@ -10,6 +10,7 @@ import Test2Component from "./Components/test2";
 import TestComponent3 from "./Components/test3";
 import Header from "./Components/header";
 import LoginComponent from "./Components/login";
+import TestCompJurek from "./Components/jurektest";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="/test2" element={<TestComponent3 />} />
           <Route path="/test3" element={<Test2Component />} />
           <Route path="/test3" element={<Test2Component />} />
-          <Route path="/login" element={<LoginComponent />} />
+          <Route path="/login" element={<TestCompJurek />} />
         </Routes>
       </div>
     </Router>

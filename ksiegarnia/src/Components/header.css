@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 7vh;
+  background-color: #777;
+  font-family: "Changa One", sans-serif;
+  color: white;
+}
+
+.title {
+  font-size: 33px;
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  margin: 10px;
+}
+
+.header-link {
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-link:hover {
+  color: black;
+}
+
+.shopping-card {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-card-text {
+  margin: 10px;
+}
+
+.shopping-icon {
+  font-size: 24px;
+}

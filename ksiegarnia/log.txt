@@ -1,1 +1,2 @@
 02/04/2023 Ustawiamy react 
+02/04/2023 Patryk zrobilelem updata do wersji 18.15 potem update z gitem i wywalilo wszystko w kosmos - cos nie tak z package.json 

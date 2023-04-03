@@ -1,5 +1,5 @@
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,7 +33,7 @@ const Header = () => {
       </div>
       <div className="shopping-card">
         <div>
-          <FaShoppingCart className="shopping-icon" />
+         
         </div>
         <div className="shopping-card-text">TWÓJ KOSZYK:</div>
         <div className="shopping-card-text">0.00 zł</div>

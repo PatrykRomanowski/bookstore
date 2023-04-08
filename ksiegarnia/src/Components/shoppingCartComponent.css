@@ -1,0 +1,115 @@
+.itemsContainer {
+  border: 1px solid #bbb;
+  /* border-radius: 15px; */
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  width: 95%;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.photoInShoppingCart {
+  width: 60px;
+}
+
+.bookNameShoppingCart {
+  width: 50%;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.shippingCartTitle {
+  font-family: "Roboto-M", sans-serif;
+  font-size: 20px;
+  color: #333;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.goToPayButton {
+  font-family: "Roboto-M", sans-serif;
+  color: white;
+  background-color: #fe7f00;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
+  transition: ease-in 0.13s;
+  cursor: pointer;
+  width: 200px;
+  align-self: self-end;
+  margin: 20px;
+}
+
+.goToPayButton:hover {
+  background-color: #ffe5b4;
+}
+
+.totalCost {
+  font-family: "Roboto-M", sans-serif;
+  margin-right: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: end;
+  margin-bottom: 5px;
+}
+
+.totalCostValue {
+  font-family: "Roboto-M", sans-serif;
+  font-size: 26px;
+}
+
+.totalCostContainer {
+  display: flex;
+  align-self: self-end;
+  margin-right: 40px;
+}
+
+.deleteItem {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: ease-in 0.13s;
+}
+
+.deleteItem:hover {
+  background-color: #eee;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+}
+
+.totalCostInShoppingCart {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto-M", sans-serif;
+  width: 20%;
+}
+
+.counterInShoppingCart {
+  font-family: "Roboto-M", sans-serif;
+  font-size: 18px;
+  color: rgb(228, 105, 105);
+}
+
+.costinShoppinCart {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-right: 10px;
+}

@@ -9,6 +9,7 @@ import TestComponent from "./Components/test";
 import Test2Component from "./Components/test2";
 import TestComponent3 from "./Components/test3";
 import Header from "./Components/header";
+import ShoppingCartComponent from "./Components/shoppingCartComponent";
 import LoginComponent from "./Components/login";
 import TestCompJurek from "./Components/jurektest";
 
@@ -21,7 +22,7 @@ function App() {
           <Route exact path="/" element={<TestComponent />} />
           <Route path="/test2" element={<TestComponent3 />} />
           <Route path="/test3" element={<Test2Component />} />
-          <Route path="/test3" element={<Test2Component />} />
+          <Route path="/shoppingCart" element={<ShoppingCartComponent />} />
           <Route path="/login" element={<TestCompJurek />} />
         </Routes>
       </div>

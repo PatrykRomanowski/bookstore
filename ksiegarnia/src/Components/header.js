@@ -1,5 +1,8 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,9 +11,13 @@ import {
   Link,
 } from "react-router-dom";
 
+import { useSelector } from "react-redux";
+
 import "./header.css";
 
 const Header = () => {
+  const totalCost = useSelector((state) => state.test.value);
+
   return (
     <div className="header">
       <div className="title">KSIAZKOWNIA</div>
@@ -31,13 +38,15 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="shopping-card">
-        <div>
-         
+      <Link className="header-link" to="/shoppingCart">
+        <div className="shopping-card">
+          <FontAwesomeIcon icon={faShoppingCart} />
+          <div className="shopping-card-text">TWÓJ KOSZYK:</div>
+          <div className="shopping-card-text">
+            {totalCost.toFixed(2)} &pound;
+          </div>
         </div>
-        <div className="shopping-card-text">TWÓJ KOSZYK:</div>
-        <div className="shopping-card-text">0.00 zł</div>
-      </div>
+      </Link>
     </div>
   );
 };

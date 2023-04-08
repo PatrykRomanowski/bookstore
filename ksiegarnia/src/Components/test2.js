@@ -1,33 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const Test2Component = () => {
-  const [test1, setTest1] = useState(0);
+import { useDispatch } from "react-redux";
 
-  const counter = () => {
-    setTest1(test1 + 1);
+import { testContextActions } from "../store/test-context";
+
+import "./booksComponent.css";
+
+const books = [
+  {
+    id: 1,
+    booksName: "Mikrokontrolery z rdzeniem arm7",
+    author: "Lucjan Bryndza",
+    price: 10.99,
+    pricePromo: 9.99,
+    img: require("../img/bryndza1.jpg"),
+    counter: 1,
+  },
+  {
+    id: 2,
+    booksName: "Mikrokontrolery z rdzeniem arm9",
+    author: "Lucjan Bryndza",
+    price: 12.99,
+    pricePromo: 11.99,
+    img: require("../img/bryndza2.jpg"),
+    counter: 1,
+  },
+];
+
+function TestComponent3() {
+  const dispatch = useDispatch();
+
+  const addBookHandler = (price, id, item) => {
+    dispatch(testContextActions.addValue({ price, id, item }));
   };
 
-  const buttonStyle = {
-    backgroundColor: "#4CAF50",
-    border: "none",
-    color: "yellow",
-    padding: "10px 20px",
-    textAlign: "center",
-    textDecoration: "none",
-    display: "inline-block",
-    fontSize: "16px",
-    margin: "4px 2px",
-    cursor: "pointer",
-  };
+  const showBooks = books.map((item) => (
+    <div className="bookContainer" key={item.id}>
+      <div className="bookPhoto">
+        <img className="photo" src={item.img} alt=""></img>
+      </div>
 
-  return (
-    <div>
-      <div>{test1}</div>
-      <button style={buttonStyle} onClick={counter}>
-        Click me!
+      <div className="bookName">{item.booksName}</div>
+      <div className="bookAuthor">{item.author}</div>
+      {/* <div className="bookPrice">{item.price} £</div> */}
+
+      {item.pricePromo === undefined ? (
+        <div className="bookPriceWithOutPromo"> {item.price} £</div>
+      ) : (
+        <div>
+          <div className="bookPrice">{item.price} £</div>
+          <div className="bookPricePromo"> {item.pricePromo} £</div>
+        </div>
+      )}
+
+      <button
+        onClick={() =>
+          addBookHandler(
+            item.pricePromo === undefined ? item.price : item.pricePromo,
+            item.id,
+            item
+          )
+        }
+        className="addBook"
+      >
+        DODAJ DO KOSZYKA
       </button>
     </div>
-  );
-};
+  ));
 
-export default Test2Component;
+  return <div className="booksContainer"> {showBooks} </div>;
+}
+
+export default TestComponent3;

@@ -1,29 +1,42 @@
 import React from "react";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "./shoppingCartComponent.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
+import { testContextActions } from "../store/test-context";
+
 const ShoppingCartComponent = () => {
+  const dispatch = useDispatch();
+
+  const deleteItem = (id, price, counter) => {
+    dispatch(testContextActions.deleteItem({ id, price, counter }));
+  };
+
   const myItems = useSelector((state) => state.test.items);
   const totalCost = useSelector((state) => state.test.value);
-
-  const deleteItem = () => {
-    console.log("XD");
-  };
 
   const showMyBooks = myItems.map((item) => (
     <div className="item">
       <img className="photoInShoppingCart" src={item.img} alt=""></img>
       <div className="bookNameShoppingCart">{item.booksName}</div>
       <div className="costinShoppinCart">
-        {item.pricePromo === null ? item.price : item.pricePromo}
+        {item.pricePromo === undefined ? item.price : item.pricePromo}
       </div>
       <div className="counterInShoppingCart"> X {item.counter}</div>
       <div className="buttonContainer">
-        <div className="deleteItem">
+        <div
+          onClick={() =>
+            deleteItem(
+              item.id,
+              item.pricePromo === undefined ? item.price : item.pricePromo,
+              item.counter
+            )
+          }
+          className="deleteItem"
+        >
           <FontAwesomeIcon
             style={{ color: "#777", width: 16 }}
             icon={faTrash}
@@ -31,7 +44,7 @@ const ShoppingCartComponent = () => {
         </div>
       </div>
       <div className="totalCostInShoppingCart">
-        {item.pricePromo === null
+        {item.pricePromo === undefined
           ? item.price * item.counter
           : item.pricePromo * item.counter}
         &pound;

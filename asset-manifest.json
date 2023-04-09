@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bookstore/static/css/main.66c368aa.css",
+    "main.js": "/bookstore/static/js/main.7e164bda.js",
+    "static/media/Roboto-Medium.ttf": "/bookstore/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Regular.ttf": "/bookstore/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Czysty_kod.jpg": "/bookstore/static/media/Czysty_kod.b77e0383fcb9808d2ea4.jpg",
+    "static/media/bryndza2.jpg": "/bookstore/static/media/bryndza2.977fc86df715d1cc78d0.jpg",
+    "static/media/sql.jpg": "/bookstore/static/media/sql.c6e0c3e1116e4838e92c.jpg",
+    "static/media/sztuczna.jpg": "/bookstore/static/media/sztuczna.59552f6be559841f6a58.jpg",
+    "static/media/alg.jpg": "/bookstore/static/media/alg.692de112ab70d1c1ffa2.jpg",
+    "static/media/bryndza1.jpg": "/bookstore/static/media/bryndza1.07b8e27bc4c820ca822f.jpg",
+    "static/media/unix.jpg": "/bookstore/static/media/unix.50099e20521e687e09df.jpg",
+    "static/media/ChangaOne-Regular.ttf": "/bookstore/static/media/ChangaOne-Regular.295d0ae8f9382acdd05a.ttf",
+    "static/media/word.jpg": "/bookstore/static/media/word.c86c351e1e3d8c0506cf.jpg",
+    "static/media/django.jpg": "/bookstore/static/media/django.36e18394a47f93832124.jpg",
+    "static/media/python.jpg": "/bookstore/static/media/python.7aae3cf9c06d04c70122.jpg",
+    "index.html": "/bookstore/index.html",
+    "main.66c368aa.css.map": "/bookstore/static/css/main.66c368aa.css.map",
+    "main.7e164bda.js.map": "/bookstore/static/js/main.7e164bda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66c368aa.css",
+    "static/js/main.7e164bda.js"
+  ]
+}

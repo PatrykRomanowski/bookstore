@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="title">KSIAZKOWNIA</div>
+      <div className="title">KSIAZKOWNIA V2</div>
       <div className="menu">
         <div className="menu-item">
           <Link className="header-link" to="/test2">

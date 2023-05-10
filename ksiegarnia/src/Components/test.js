@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const TestComponent = () => {
-  return <div> TEST 1 jurek gg gg</div>;
+  return <div> {process.env.React_App_APIKEY}</div>;
 };
 
 export default TestComponent;

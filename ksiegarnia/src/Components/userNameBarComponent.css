@@ -1,0 +1,16 @@
+.userNameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 4vh;
+  margin-right: 100px;
+  max-width: 100%;
+  /* background-color: #777; */
+}
+
+.userName {
+  color: black;
+  font-family: "Changa One", sans-serif;
+  margin-right: 20px;
+}

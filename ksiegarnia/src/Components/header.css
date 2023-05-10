@@ -7,6 +7,7 @@
   background-color: #777;
   font-family: "Changa One", sans-serif;
   color: white;
+  max-width: 100%;
 }
 
 .title {
@@ -27,6 +28,7 @@
   text-decoration: none;
   color: white;
   transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .header-link:hover {

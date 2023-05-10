@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bookstore/static/css/main.72963b21.css",
-    "main.js": "/bookstore/static/js/main.ac4dbfe1.js",
+    "main.css": "/bookstore/static/css/main.a4aea8ac.css",
+    "main.js": "/bookstore/static/js/main.dd76286e.js",
     "static/media/Roboto-Medium.ttf": "/bookstore/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
     "static/media/Roboto-Regular.ttf": "/bookstore/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Czysty_kod.jpg": "/bookstore/static/media/Czysty_kod.b77e0383fcb9808d2ea4.jpg",
@@ -16,11 +16,11 @@
     "static/media/django.jpg": "/bookstore/static/media/django.36e18394a47f93832124.jpg",
     "static/media/python.jpg": "/bookstore/static/media/python.7aae3cf9c06d04c70122.jpg",
     "index.html": "/bookstore/index.html",
-    "main.72963b21.css.map": "/bookstore/static/css/main.72963b21.css.map",
-    "main.ac4dbfe1.js.map": "/bookstore/static/js/main.ac4dbfe1.js.map"
+    "main.a4aea8ac.css.map": "/bookstore/static/css/main.a4aea8ac.css.map",
+    "main.dd76286e.js.map": "/bookstore/static/js/main.dd76286e.js.map"
   },
   "entrypoints": [
-    "static/css/main.72963b21.css",
-    "static/js/main.ac4dbfe1.js"
+    "static/css/main.a4aea8ac.css",
+    "static/js/main.dd76286e.js"
   ]
 }

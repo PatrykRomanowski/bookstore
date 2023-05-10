@@ -17,6 +17,7 @@ const ShoppingCartComponent = () => {
 
   const myItems = useSelector((state) => state.test.items);
   const totalCost = useSelector((state) => state.test.value);
+  const isLogin = useSelector((state) => state.login.email);
 
   const showMyBooks = myItems.map((item) => (
     <div className="item">
@@ -61,7 +62,14 @@ const ShoppingCartComponent = () => {
         <div className="totalCostValue">{totalCost}&pound;</div>
       </div>
 
-      <button className="goToPayButton">Przejdź do płatności</button>
+      <button
+        disabled={
+          (isLogin ? false : true) || (myItems.length > 0 ? false : true)
+        }
+        className="goToPayButton"
+      >
+        Przejdź do płatności
+      </button>
     </div>
   );
 };

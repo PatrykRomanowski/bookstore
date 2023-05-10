@@ -54,12 +54,12 @@ const Header = () => {
 
       <div className="menu">
         <div className="menu-item">
-          <Link className="header-link" to="/test2">
+          <Link className="header-link" to="/shop">
             SKLEP
           </Link>
         </div>
         <div className="menu-item">
-          <Link className="header-link" to="/test3">
+          <Link className="header-link" to="/shopPromo">
             PROMOCJE
           </Link>
         </div>

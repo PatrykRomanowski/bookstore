@@ -67,6 +67,17 @@
   font-size: 26px;
 }
 
+.loginMessage {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Roboto-M", sans-serif;
+  font-size: 20px;
+  color: crimson;
+}
+
 .totalCostContainer {
   display: flex;
   align-self: self-end;

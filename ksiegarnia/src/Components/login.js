@@ -27,7 +27,7 @@ const LoginComponent = () => {
       setTimeout(() => {
         setShowModal(false);
         setLoginResult(null);
-        navigate("/test2");
+        navigate("/shop");
       }, 2000);
     } catch (error) {
       console.log("Logowanie nie powiodło się.", error);

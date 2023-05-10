@@ -55,6 +55,9 @@ const ShoppingCartComponent = () => {
 
   return (
     <div className="itemsContainer">
+      {isLogin ? null : (
+        <div className="loginMessage">Aby dokończyć zakupy zaloguj się!!!</div>
+      )}
       <div className="shippingCartTitle">Twój koszyk</div>
       {showMyBooks}
       <div className="totalCostContainer">

@@ -21,7 +21,7 @@ function App() {
         <UserNameBarComponent />
 
         <Routes>
-          <Route exact path="/" element={<ShopComponent />} />
+          <Route exact path="/bookstore" element={<ShopComponent />} />
           <Route path="/shop" element={<ShopComponent />} />
           <Route path="/shopPromo" element={<ShopPromoComponent />} />
           <Route path="/shoppingCart" element={<ShoppingCartComponent />} />

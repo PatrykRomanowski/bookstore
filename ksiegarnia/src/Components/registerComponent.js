@@ -40,10 +40,11 @@ const RegisterComponent = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className="form-register" onSubmit={handleSubmit}>
         <p className="inputText">WPISZ LOGIN:</p>
 
         <input
+          className="input-register"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -51,11 +52,14 @@ const RegisterComponent = () => {
         <p className="inputText">WPISZ HASŁO:</p>
 
         <input
+          className="input-register"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Zarejestruj się</button>
+        <button className="btn-register" type="submit">
+          Zarejestruj się
+        </button>
       </form>
       {showModal && (
         <div className="modal">

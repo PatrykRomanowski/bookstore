@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import "./shoppingCartComponent.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +10,24 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { testContextActions } from "../store/test-context";
 
 const ShoppingCartComponent = () => {
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = `https://www.paypal.com/sdk/js?client-id=${process.env.PayPalKey}&currency=PLN`;
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  // }, []);
+
   const dispatch = useDispatch();
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   const deleteItem = (id, price, counter) => {
     dispatch(testContextActions.deleteItem({ id, price, counter }));
@@ -20,7 +38,7 @@ const ShoppingCartComponent = () => {
   const isLogin = useSelector((state) => state.login.email);
 
   const showMyBooks = myItems.map((item) => (
-    <div className="item">
+    <div className="item" key={item.id}>
       <img className="photoInShoppingCart" src={item.img} alt=""></img>
       <div className="bookNameShoppingCart">{item.booksName}</div>
       <div className="costinShoppinCart">
@@ -66,6 +84,7 @@ const ShoppingCartComponent = () => {
       </div>
 
       <button
+        onClick={openModal}
         disabled={
           (isLogin ? false : true) || (myItems.length > 0 ? false : true)
         }
@@ -73,6 +92,40 @@ const ShoppingCartComponent = () => {
       >
         Przejdź do płatności
       </button>
+      {modalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h2>Wybierz metodę płatności</h2>
+              <span className="close" onClick={closeModal}>
+                &times;
+              </span>
+            </div>
+            <div className="modal-body">
+              <div className="button-container">
+                <button className="btn">
+                  <Link className="link" to="/stripePayment">
+                    Zapłać kartą - system płatności STRIPE
+                  </Link>
+                </button>
+
+                {/* <button className="btn">PayPal</button> */}
+                <button className="btn">
+                  <Link className="link" to="/dotPayPayment">
+                    Zapłać kartą - system płatności DotPay
+                  </Link>
+                </button>
+                <button className="btn">
+                  {" "}
+                  <Link className="link" to="/payPalPayment">
+                    Zapłać kartą - system płatności PayPal
+                  </Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

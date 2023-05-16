@@ -15,6 +15,31 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AY-wYEgI7zEpmk8BtSWlLIxds-TfIB81_e1oDe9lvIzqBLGJs0pJs6TWhqJnpVW6wwsjX3a6-YAudCPc&currency=PLN"></script> -->
+
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AY-wYEgI7zEpmk8BtSWlLIxds-TfIB81_e1oDe9lvIzqBLGJs0pJs6TWhqJnpVW6wwsjX3a6-YAudCPc&currency=PLN"></script> -->
+    <!-- <script id="paypal-script" src=""></script> -->
+
+    <script
+      id="dotpay-payment-script"
+      src="https://ssl.dotpay.pl/test_payment/widget/payment_widget.js"
+      async
+    ></script>
+
+    <script type="text/javascript">
+      var dotpayWidgetConfig = {
+        sellerAccountId: "768789",
+      };
+    </script>
+
+    <link
+      href="https://ssl.dotpay.pl/test_payment/widget/payment_widget.min.css"
+      rel="stylesheet"
+    />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

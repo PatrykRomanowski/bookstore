@@ -48,9 +48,10 @@ const LoginComponent = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className="form-login" onSubmit={handleSubmit}>
         <p className="inputText">WPISZ LOGIN:</p>
         <input
+          className="input-login"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -60,8 +61,11 @@ const LoginComponent = () => {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="input-login"
         />
-        <button type="submit">Zaloguj się</button>
+        <button className="btn-login" type="submit">
+          Zaloguj się
+        </button>
         <p onClick={registerHandler} className="registerButton">
           Jeśli nie posiadasz konta zarejestruj się!
         </p>

@@ -1,4 +1,4 @@
-form {
+.form-login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +85,7 @@ form {
   background-color: #0063a8;
 }
 
-input {
+.input-login {
   margin: 10px 0;
   padding: 10px;
   border: 1px solid gray;
@@ -94,7 +94,7 @@ input {
   font-size: 16px;
 }
 
-button {
+.btn-login {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #007bff;
@@ -105,7 +105,7 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.btn-login:hover {
   background-color: #0069d9;
 }
 

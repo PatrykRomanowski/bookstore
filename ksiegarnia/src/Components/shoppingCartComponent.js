@@ -10,13 +10,6 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { testContextActions } from "../store/test-context";
 
 const ShoppingCartComponent = () => {
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = `https://www.paypal.com/sdk/js?client-id=${process.env.PayPalKey}&currency=PLN`;
-  //   script.async = true;
-  //   document.body.appendChild(script);
-  // }, []);
-
   const dispatch = useDispatch();
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -112,13 +105,14 @@ const ShoppingCartComponent = () => {
                 {/* <button className="btn">PayPal</button> */}
                 <button className="btn">
                   <Link className="link" to="/dotPayPayment">
-                    Zapłać kartą - system płatności DotPay
+                    Zapłać kartą, blikiem, przelewem - system płatności DotPay
                   </Link>
                 </button>
                 <button className="btn">
                   {" "}
                   <Link className="link" to="/payPalPayment">
-                    Zapłać kartą - system płatności PayPal
+                    Zapłać przez PayPal, Przelewy24, kartą - system płatności
+                    PayPal
                   </Link>
                 </button>
               </div>

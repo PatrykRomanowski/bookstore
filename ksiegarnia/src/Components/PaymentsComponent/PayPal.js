@@ -53,7 +53,7 @@ export default function PayPal() {
   }, []);
 
   return (
-    <div>
+    <div className="center">
       {!paymentSuccessful ? (
         <div ref={paypal} className="paypal-module"></div>
       ) : (

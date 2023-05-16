@@ -14,13 +14,6 @@ import PayPal from "./Components/PaymentsComponent/PayPal";
 import StripeContainer from "./Components/StripeContainer";
 
 function App() {
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = `https://www.paypal.com/sdk/js?client-id=${process.env.PayPalKey}&currency=PLN`;
-  //   script.async = true;
-  //   document.body.appendChild(script);
-  // }, []);
-
   return (
     <Router>
       <div className="App">

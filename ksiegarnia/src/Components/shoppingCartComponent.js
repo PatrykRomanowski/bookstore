@@ -96,12 +96,6 @@ const ShoppingCartComponent = () => {
             </div>
             <div className="modal-body">
               <div className="button-container">
-                <button className="btn">
-                  <Link className="link" to="/stripePayment">
-                    Zapłać kartą - system płatności STRIPE
-                  </Link>
-                </button>
-
                 {/* <button className="btn">PayPal</button> */}
                 <button className="btn">
                   <Link className="link" to="/dotPayPayment">
@@ -113,6 +107,11 @@ const ShoppingCartComponent = () => {
                   <Link className="link" to="/payPalPayment">
                     Zapłać przez PayPal, Przelewy24, kartą - system płatności
                     PayPal
+                  </Link>
+                </button>
+                <button className="btn">
+                  <Link className="link" to="/stripePayment">
+                    Zapłać kartą - system płatności STRIPE
                   </Link>
                 </button>
               </div>
